@@ -37,6 +37,12 @@ const parserFactory = () => {
             fragment.post_uuid = post.uuid;
             fragment.post_title = post.title;
             fragment.post_published_at = post.published_at;
+            fragment.plaintext = post.plaintext;
+            fragment.html = post.html;
+            fragment.updated_at = post.updated_at;
+            fragment.url = post.url;
+            fragment.tags = post.tags;
+            fragment.slug = post.slug;
           } else {
             if(fragment.content === undefined) fragment.content = '';
             // If node not a heading, then it is a text node and always has a value property
